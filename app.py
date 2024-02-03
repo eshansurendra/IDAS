@@ -4,7 +4,7 @@ import numpy as np
 import dlib
 from math import hypot
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 # Load face detector and shape predictor
 detector = dlib.get_frontal_face_detector()
@@ -110,5 +110,5 @@ def upload():
 def preview():
     return render_template('preview.html')
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     app.run(host='0.0.0.0')
